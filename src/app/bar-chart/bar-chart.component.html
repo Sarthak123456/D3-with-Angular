@@ -1,0 +1,24 @@
+<ngx-charts-bar-vertical
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="single"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)">
+</ngx-charts-bar-vertical>
+
+
+<form class="widthForm">
+
+  <label ><strong>  Width: </strong></label>
+  <input type="number" placeholder="Enter width of the chart" id='width' name = 'width' [(ngModel)] = formModel.width>
+  <button type='submit' (click) = 'onUpdate()'>Update</button>
+
+</form>
+
